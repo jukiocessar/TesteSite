@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Style.css">
+  <title>Bem Vindo</title>
+</head>
+<body>
+  <header>
+<h1 id="nomeUsuario"></h1>
+<button id="abrir">Fazer Pedido</button>
+   <dialog id="oi">
+   <h3 style="font-family:courier;"> Bem Vindo a <span>Janela</span> de Compras</h3>
+    <form action="">
+      
+      
+      <input type="text" name="cadas" id="nome" placeholder="Digite seu Nome">
+     
+      <input type="email" name="cadas" id="Email" placeholder="Digite se Email">
+      
+      <input type="number" name="cadas" id="Qpedido" placeholder="Digite a Quantidade do Pedido">
+      <input type="submit" value="Enviar">
+           <button id="voltar">Cancelar</button>
+    </form>
+   </dialog>
+    <div id="cabecalho">
+
+    <img src="image/brigadeiro-beijinho.png" alt="">
+    
+        <h2>O Mundo Fica Mais <span>Doce </span> com Brigadeiro</h2>
+    </div>
+
+  </header>
+  <main>
+    <section>
+      <img src="image/pngwing.com.png" alt="" >
+      <h2>O Porquê de <span>Comer</span> Brigadeiro!</h2>
+      <p>Bem Pra quem não tem alguma reação aos ingredientes,
+      <br>
+      Diz estudo que Comer Brigadeiro traz alegria ao paladar.
+      <br>
+      e nada melhor do que estar de bem com seu companheiro de batalhas, não é?
+      </p>
+    </section>
+
+
+  <!--  <div id="cImagens">
+
+    <section class="carrosselPai">
+
+          <div id="cCima">
+          <div id="carrossel">
+      <img src="image/brigadeiro-beijinho.png" alt="">
+        <img src="image/Brigadeiros.png" alt="">
+         <img src="image/logoTipo.png" alt="">
+           <img src="image/right-arrow_545682.png" alt="">
+           </div>
+</div>
+    </section>
+    </div>-->
+        <section id="section2">
+        <img src="image/logoTipo.png" alt="" id="logo1" >
+      <!--<button onclick="esquerda" id="e">Aperte Aqui</button>
+            <button onclick="pausa" id="pausa">Aperte Aqui</button>   -->          
+
+      <h2 id="textVender">Onde Comprar o <span>melhor</span> Brigadeiro!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eligendi facere vel provident modi, earum similique sit nihil placeat nesciunt deserunt a sapiente deleniti magnam fugiat officiis qui, est repellat.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <h2>Quer Comprar Brigadeiro?</h2>
+    <p>mande mensagem para a gente:
+<a href="mailto:juliolimmasilva01@gmail.com">Fale Conosco</a></p>
+    
+  </footer>
+  <script>
+  
+  const dialogo = document.getElementById("oi").open=false
+  
+  const abrirDialog = document.getElementById("abrir").addEventListener("click",function Abriir(){
+    const dialogo = document.getElementById("oi").open=true
+  })
+  
+  const fecharDialog = document.getElementById("voltar").addEventListener("click",function fechar(){
+    const dialogo = document.getElementById("oi").open=false
+  })
+  
+  /*const botao2 = document.getElementById("pausa").addEventListener("click",function pausa(){
+    
+    document.getElementById("logo1").style.animation ="none"
+    
+  })
+  
+  const botao = document.getElementById("e").addEventListener("click",function esquerda(){
+    
+   document.getElementById("logo1").style.animation="teste 3s infinite "
+   document.getElementById("textVender").innerHTML = 'É só <span>Aqui</span>,Na Xuin!'
+  
+  
+  })*/
+    const nome = prompt('Bem Vindo,Digite seu nome')
+    document.getElementById("nomeUsuario").innerHTML = 'Bem vindo(a)  ' +nome+'👋🎉'
+    
+   
+
+    
+  </script>
+</body>
+</html>
